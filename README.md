@@ -47,15 +47,15 @@ Validation of data reliability prior to analysis:
 
 ## Repository Structure
 sql/
-├── 01_operational_performance.sql
-├── 02_risk_indicators.sql
-├── 03_quality_compliance.sql
-├── 04_cost_value_analysis.sql
-├── 05_data_quality_governance.sql
+01_operational_performance.sql
+02_risk_indicators.sql
+03_quality_compliance.sql
+04_cost_value_analysis.sql
+05_data_quality_governance.sql
 
 insights/
-├── findings_summary.md
-├── README.md
+findings_summary.md
+README.md
 
 README.md
 
