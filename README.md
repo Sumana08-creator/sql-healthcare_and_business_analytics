@@ -60,6 +60,8 @@ insights/
 
 README.md
 ---
+
+
 ## Tools & Skills Demonstrated
 - SQL (T-SQL)
 - Analytical problem framing
