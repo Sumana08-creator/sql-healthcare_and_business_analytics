@@ -46,6 +46,7 @@ Validation of data reliability prior to analysis:
 
 
 ## Repository Structure
+```text
 sql/
 ├── 01_operational_performance.sql
 ├── 02_risk_indicators.sql
@@ -58,6 +59,7 @@ insights/
 ├── README.md
 
 README.md
+
 
 ## Tools & Skills Demonstrated
 - SQL (T-SQL)
