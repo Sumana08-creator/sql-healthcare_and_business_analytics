@@ -1,4 +1,4 @@
-# SQL Healthcare & Business Analytics (Simulated)
+# SQL Healthcare & Business Analytics 
 
 ## Overview
 This repository contains a structured SQL analytics project built on a **simulated General Hospital database**.  
