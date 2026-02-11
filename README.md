@@ -58,7 +58,7 @@ insights/
 ├── findings_summary.md
 ├── README.md
 
-README.md
+
 ---
 
 
