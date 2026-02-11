@@ -1,1 +1,125 @@
+# Findings Summary (Interpretation Guide)
+
+This document summarises how outputs from the SQL analysis should be interpreted.
+To avoid exposing dataset-specific results, the focus is on analytical reasoning,
+governance insight, and decision-support thinking rather than numeric values.
+
+All analysis is based on simulated, non-production healthcare data.
+
+---
+
+## 1. Operational Performance — Key Insights
+
+**Admissions Trends**
+Admission analysis highlights periods of higher operational demand.
+Hospitals experiencing sustained or seasonal peaks may require proactive
+capacity planning and workforce alignment.
+
+**Busiest Departments**
+Departments with consistently high encounter volumes represent operational
+pressure points. These areas benefit most from workflow optimisation,
+staffing review, and process efficiency initiatives.
+
+**Length of Stay (LOS)**
+Higher average LOS may indicate discharge delays, complex case mix, or
+process inefficiencies. When elevated LOS aligns with high admission
+volumes, the risk of capacity bottlenecks increases.
+
+**ICU Utilisation**
+Higher ICU utilisation reflects increased patient acuity and operational
+strain. This metric should be reviewed alongside LOS and readmissions
+to understand compounded risk exposure.
+
+**Peak Admission Days**
+Identifying peak admission days supports scheduling and staffing decisions
+to maintain service quality during high-demand periods.
+
+---
+
+## 2. Risk Indicators — Key Insights
+
+**Readmissions**
+Readmission rates serve as a proxy for care quality and discharge
+effectiveness. Elevated rates may indicate gaps in care coordination
+or post-discharge follow-up.
+
+**Inpatient Readmission Hotspots**
+Departments with higher inpatient readmission rates require closer
+review, as these often signal deeper operational or clinical issues.
+
+**LOS and Readmission Hotspots**
+Departments exhibiting both longer LOS and higher readmission rates
+represent compounded risk areas. These hotspots should be prioritised
+for targeted improvement initiatives.
+
+**Diagnosis and Procedure Risk Patterns**
+Grouping readmissions by diagnosis or procedure helps identify clinical
+categories associated with higher risk, enabling focused quality
+improvement efforts.
+
+**High-Acuity Risk (ICU + Readmission)**
+Encounters involving both ICU care and readmission highlight high-acuity
+risk populations that warrant enhanced governance oversight.
+
+---
+
+## 3. Quality & Compliance — Key Insights
+
+**Compliance by Hospital and Measure**
+Compliance analysis enables benchmarking across hospitals and highlights
+measures requiring attention or corrective action.
+
+**Practice-Level Compliance**
+Practice-level views help identify operational sources of non-compliance,
+supporting targeted interventions rather than broad system-wide changes.
+
+**Lowest-Performing Measures**
+Focusing on the lowest-performing measures allows leadership to prioritise
+improvement efforts and allocate resources effectively.
+
+---
+
+## 4. Cost & Value — Key Insights (Surgical)
+
+**Cost and LOS by Specialty**
+Surgical specialties with higher cost and longer LOS may indicate
+opportunities for efficiency improvement or cost optimisation.
+
+**Profitability by Specialty**
+Profitability analysis supports service-line decision-making and helps
+identify areas that may require operational redesign or financial review.
+
+**Resource-Level Cost Drivers**
+Resource-level analysis highlights what drives surgical costs, enabling
+targeted cost management without compromising care quality.
+
+---
+
+## 5. Data Quality & Governance — Key Insights
+
+**Date Validity**
+Invalid or inconsistent date formats undermine LOS and trend analysis.
+Ensuring reliable date parsing is essential for trustworthy reporting.
+
+**Logical Consistency**
+Discharge dates occurring before admission dates indicate data integrity
+issues that must be addressed prior to analysis.
+
+**Referential Integrity**
+Orphan records across encounters, quality measures, or departments can
+distort reporting and should be resolved through governance controls.
+
+**Numeric Conversion Readiness**
+Validating numeric fields stored as text (e.g. LOS) ensures analytical
+calculations are accurate and reliable.
+
+---
+
+## Closing Note
+
+This project demonstrates an end-to-end analytical workflow:
+defining business questions, building structured SQL logic,
+validating data quality, and translating outputs into
+governance-ready insights suitable for operational reporting
+and decision-making.
 
