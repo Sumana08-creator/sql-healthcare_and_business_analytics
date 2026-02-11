@@ -44,11 +44,8 @@ Validation of data reliability prior to analysis:
 - Referential integrity (orphan records)
 - Numeric conversion readiness
 
----
 
 ## Repository Structure
-
----
 
 ## Tools & Skills Demonstrated
 - SQL (T-SQL)
